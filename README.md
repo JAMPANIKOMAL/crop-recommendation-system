@@ -20,21 +20,50 @@ The main objective is to develop a machine learning model that analyzes key agri
 - **Language:** Python 3
 - **Data Science & ML:** pandas, scikit-learn, numpy
 - **Data Visualization:** matplotlib, seaborn
-- **Development Environment:** Python scripts (runnable from any IDE or terminal)
+- **Development Environment:** Jupyter Notebooks (recommended), Python scripts
 
 ## Project Structure
 
-The analysis is organized into four sequential Python scripts:
+The analysis is organized into four sequential Jupyter Notebooks:
 
-1. **01_data_generation.py:** Creates and explores the synthetic dataset of agricultural conditions and optimal crops.
-2. **02_data_preprocessing.py:** Cleans, encodes, and prepares the data for machine learning.
-3. **03_model_development.py:** Trains and evaluates several classification models to identify the best performer.
-4. **04_results_visualization.py:** Visualizes results, including model accuracy for each crop and key predictive factors.
+1. **notebooks/01_data_generation.ipynb:** Creates and explores the synthetic dataset of agricultural conditions and optimal crops.
+2. **notebooks/02_data_preprocessing.ipynb:** Cleans, encodes, and prepares the data for machine learning.
+3. **notebooks/03_model_development.ipynb:** Trains and evaluates several classification models to identify the best performer.
+4. **notebooks/04_results_visualization.ipynb:** Visualizes results, including model accuracy for each crop and key predictive factors.
 
-## How to Run
+Other files:
+- **models/best_model_crop.pkl:** Saved best-performing model for crop recommendation.
 
-1. Ensure Python and the required libraries are installed (`pip install -r requirements.txt`).
-2. Run the scripts in numerical order from your terminal or IDE, starting with `01_data_generation.py`.
+## Setup Instructions
+
+### 1. Create Python Environment (Recommended)
+
+It is recommended to use a virtual environment to avoid dependency conflicts:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 2. Install Dependencies
+
+Install required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Project
+
+Open the notebooks in the `notebooks/` folder using JupyterLab or Jupyter Notebook:
+
+```bash
+jupyter lab
+# or
+jupyter notebook
+```
+
+Run the notebooks in order (01 → 04) for full workflow.
 
 ## Acknowledgement
 
